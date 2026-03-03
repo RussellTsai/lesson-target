@@ -1,0 +1,8 @@
+{
+  "name": "學童學力闖關計畫 V5_改地圖風格",
+  "description": "一個專為五年級學童設計的遊戲化學習行程管理應用程式，將枯燥的考試準備轉化為充滿驚喜的冒險闖關之旅。",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

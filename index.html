@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>五年級學力闖關計畫</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Noto Sans TC', sans-serif;
+        background-color: #f0f9ff;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .font-game {
+        font-family: 'ZCOOL+KuaiLe', 'Noto Sans TC', cursive;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+      .floating {
+        animation: float 4s ease-in-out infinite;
+      }
+      /* 3D 空間基礎 */
+      .perspective-scene {
+        perspective: 1200px;
+        transform-style: preserve-3d;
+      }
+      .ground-plane {
+        transform: rotateX(25deg);
+        transform-style: preserve-3d;
+      }
+      /* 垂直於地面的物件 */
+      .billboard {
+        transform: rotateX(-25deg);
+        transform-style: preserve-3d;
+      }
+      .shadow-cast {
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+        filter: blur(8px);
+        transform: rotateX(90deg) translateZ(-2px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
